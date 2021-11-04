@@ -1,7 +1,7 @@
-import createHandler from "github-webhook-handler";
-import dotenv from "dotenv";
-import { exec } from "child_process";
-import http from "http";
+const createHandler = require("github-webhook-handler");
+const dotenv = require("dotenv");
+const { exec } = require("child_process");
+const http = require("http");
 dotenv.config();
 
 export default () => {
