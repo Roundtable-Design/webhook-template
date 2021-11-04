@@ -4,7 +4,7 @@ const { exec } = require("child_process");
 const http = require("http");
 dotenv.config();
 
-export default () => {
+module.exports = () => {
 	var handler = createHandler({
 		path: "/webhook",
 		secret: process.env.GIT_SECRET, // Use the .env file
